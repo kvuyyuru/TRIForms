@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily progress Notes</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- First include jquery js-->
+    <script src="../js/JQuery/jquery-3.3.1.min.js"></script>
+    <script src="../js/bootstrapJs/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+    <script src="../js/formValidation.js"></script>
+        <script src="../js/addRow.js"></script>
+
+
+    <style>
+
+        .selector-for-some-widget {
+            box-sizing: content-box;
+        }
+    </style>
+
+
+
+</head>
+<body>
+    <form class="needs-validation" novalidate>
+        <div class="d-flex justify-content-center  container ">
+
+            <div class="form-row" align="justify">
+                <h1>SERVICE PROVIDER DAILY PROGRESS REPORT </h1>
+            </div>
+            <br />
+
+            <div class="dropdown">
+                <label for="theraphyType">Theraphy Type:</label>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Select one
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="childName">Child Name:</label>
+                    <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Child Name" value="" required>
+                    <div class="valid-feedback">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="dateOfBirth">Date Of Birth:</label>
+                    <input type="date" class="form-control is-valid" id="validationServer02" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="Date Of Birth" value="" required>
+
+                    <div class="valid-feedback">
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="pwd">Provider Name:</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Provider Name" value="" required>
+                    <div class="valid-feedback">
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-3">
+                    <label for="pwd">Service Coordinator:</label>
+                    <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Service Coordinator" value="">
+                    <div class="valid-feedback">
+
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 mb-3">
+                <label for="validationServer03">Place Of Service:</label>
+                <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Place Of Service" required>
+                <div class="invalid-feedback">
+
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <label for="validationServer04">Date Of service:</label>
+                <input type="date" class="form-control is-invalid" id="validationServer04" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="Date Of Service" required>
+            </div>
+            <br />
+            <br />
+            <br />
+
+            <div>
+                <h4 align="left">DAILY SUMMARY/PROGRESS TOWARDS OUTCOME(S):</h4>
+            </div>
+
+
+            <div class="col-md-4 mb-3">
+                <label for="dateOfBirth">Date:</label>
+                <input type="date" class="form-control is-valid" id="validationServer02" pattern="\d{1,2}/\d{1,2}/\d{4}" placeholder="Date" value="" required>
+                <div class="valid-feedback">
+                </div>
+            </div>
+
+            <table>
+                <tbody>
+                    <tr>
+                        <div class="col-md-4 mb-3">
+                            <label for="timeIn">Time In:</label>
+                            <input type="time" class="form-control is-valid" id="validationServer02" placeholder="Time In" value="" required>
+                            <div class="valid-feedback">
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-3">
+                            <label for="pwd">Time Out:</label>
+                            <input type="time" class="form-control is-valid" id="validationServer02" placeholder="Time Out" value="" required>
+                            <div class="valid-feedback">
+
+                            </div>
+                        </div>
+
+                    </tr>
+                                   
+                    <tr>
+                        <td colspan="5" ">
+                            <input type="button" class="btn btn-lg btn-block " id="addrow" value="Add Row" />
+                        </td>
+                    </tr>
+                    <tr></tr>
+                
+                </tbody>
+
+            </table>
+
+            <div class="col-md-4 mb-3">
+                <span class="input-group-btn">
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                </span>
+            </div>
+
+        </div>
+            </form>
+
+
+</body>
+</html>

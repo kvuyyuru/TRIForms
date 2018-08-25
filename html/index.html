@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+     <script src="js/formValidation.js"></script> 
+</head>
+<body>
+    <form name="dailyNotesForm" action="post">
+        <div class="container">
+
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Theraphy Type
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#">HTML</a></li>
+                    <li><a href="#">CSS</a></li>
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Child Name:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter Child Name" name="email">
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter Date Of Birth" name="pwd">
+            </div>
+
+
+        </div>
+    </form>
+</body>
+</html>
