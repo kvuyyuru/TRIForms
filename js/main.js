@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 
+var path = require('path')
+
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let win
@@ -9,7 +11,7 @@ function createWindow() {
     win = new BrowserWindow({ width: 1200, height: 800 })
 
     // and load the index.html of the app.
-    win.loadFile('html/test.html')
+    win.loadFile('html/spacetest.html')
 
     // Open the DevTools.
     win.webContents.openDevTools()
